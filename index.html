@@ -20,90 +20,38 @@ h1 {
     animation: pop 1s ease forwards;
     margin-top: 30px;
 }
-@keyframes pop {
-    0% { transform: scale(0); }
-    70% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-}
-.images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
-    flex-wrap: wrap;
-}
-.images img {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    transition: transform 0.5s, box-shadow 0.5s;
-}
-.images img:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 40px rgba(255,0,150,0.6);
-}
-.message {
-    font-size: 1.5em;
-    color: #333;
-    max-width: 800px;
-    margin: 20px auto 50px auto;
-    line-height: 1.6;
-    animation: fadeIn 2s ease forwards;
-}
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-.heart {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: red;
-    transform: rotate(45deg);
-    animation: float 6s infinite linear;
-    z-index: 10;
-}
-.heart::before,
-.heart::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: red;
-    border-radius: 50%;
-}
-.heart::before { top: -10px; left: 0; }
-.heart::after { left: 10px; top: 0; }
-@keyframes float {
-    0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
-    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
-}
-iframe {
-    margin-top: 20px;
-    border-radius: 20px;
-}
+@keyframes pop {0% { transform: scale(0); } 70% { transform: scale(1.2); } 100% { transform: scale(1); }}
+.images {display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;}
+.images img {width: 200px; height: 200px; border-radius: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.3); transition: transform 0.5s, box-shadow 0.5s;}
+.images img:hover {transform: scale(1.1) rotate(5deg); box-shadow: 0 0 40px rgba(255,0,150,0.6);}
+.message {font-size: 1.5em; color: #333; max-width: 800px; margin: 20px auto 50px auto; line-height: 1.6; animation: fadeIn 2s ease forwards;}
+@keyframes fadeIn {0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); }}
+.heart {position: absolute; width: 20px; height: 20px; background: red; transform: rotate(45deg); animation: float 6s infinite linear; z-index: 10;}
+.heart::before,.heart::after {content: ''; position: absolute; width: 20px; height: 20px; background: red; border-radius: 50%;}
+.heart::before { top: -10px; left: 0; } .heart::after { left: 10px; top: 0; }
+@keyframes float {0% { transform: translateY(100vh) rotate(0deg); opacity: 1; } 100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }}
+iframe {margin-top: 20px; border-radius: 20px;}
 </style>
 </head>
 <body>
 
 <h1>Happy Birthday Meshanty!</h1>
 
-<!-- YouTube song -->
-<iframe width="0" height="0" src="https://www.youtube.com/embed/vGJTaP6anOU?autoplay=1&mute=0&controls=0&loop=1&playlist=vGJTaP6anOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- Music iframe -->
+<iframe width="1" height="1" src="https://www.youtube.com/embed/vGJTaP6anOU?autoplay=1&mute=0&controls=0&loop=1&playlist=vGJTaP6anOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <!-- Images -->
 <div class="images">
-    <img src="bd 1.jpg" alt="Meshanty 1">
-    <img src="bd 2.jpg" alt="Meshanty 2">
-    <img src="bd 3.jpg" alt="Meshanty 3">
+  <img src="bd 1.jpg" alt="Meshanty 1">
+  <img src="bd 2.jpg" alt="Meshanty 2">
+  <img src="bd 3.jpg" alt="Meshanty 3">
 </div>
 
 <!-- Message -->
 <div class="message">
-    Buang ka, my sweet Pinoy Twinkie! 💖<br>
-    I just wanted to say… you are incredible and I hope every day of your life is filled with laughter, love, and amazing adventures!<br>
-    Keep shining and never stop being you. 🌟
+  Buang ka, my sweet Pinoy Twinkie! 💖<br>
+  I just wanted to say… you are incredible and I hope every day of your life is filled with laughter, love, and amazing adventures!<br>
+  Keep shining and never stop being you. 🌟
 </div>
 
 <!-- Floating hearts -->
@@ -122,3 +70,4 @@ setInterval(createHeart, 300);
 
 </body>
 </html>
+
