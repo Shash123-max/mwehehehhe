@@ -31,8 +31,6 @@ h1 {
     gap:20px;
     margin:50px 0;
     flex-wrap:wrap;
-    z-index:1;
-    position: relative;
 }
 
 .images img {
@@ -72,9 +70,9 @@ h1 {
 .heart::after { left:10px; top:0; }
 @keyframes float {0% { transform: translateY(100vh) rotate(0deg); opacity:1;} 100% { transform: translateY(-100vh) rotate(360deg); opacity:0;} }
 
-/* Envelope animation */
+/* Envelope below images */
 .envelope {
-    margin: 20px auto 0 auto;
+    margin: 50px auto 10px auto;
     width: 200px;
     height: 120px;
     background: #d94f7c;
@@ -98,7 +96,7 @@ h1 {
 @keyframes flapOpen {0% {transform: rotate(0deg); transform-origin: bottom center;} 100% {transform: rotate(-180deg); transform-origin: bottom center;} }
 
 .paper {
-    margin: 10px auto 0 auto;
+    margin: 10px auto 20px auto;
     width: 220px;
     height: 250px;
     background: #fff;
@@ -119,7 +117,7 @@ h1 {
     white-space: pre-line;
 }
 
-/* Cute surprise button */
+/* Surprise button */
 button {
     font-size: 1.2em;
     padding: 10px 20px;
@@ -205,7 +203,7 @@ window.onload = function() {
 // Surprise button effect
 document.getElementById('surpriseBtn').addEventListener('click', ()=>{
     for(let i=0;i<20;i++) createHeart(); // burst of hearts
-    alert('💖 You are amazing, Meshanty! 💖'); // cute alert
+    alert('💖 You are amazing, Meshanty! 💖');
 });
 </script>
 
