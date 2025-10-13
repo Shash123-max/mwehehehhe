@@ -123,6 +123,7 @@ h1 {
     white-space: pre-line;
 }
 
+/* Buttons */
 button {
     font-size: 1.1em;
     padding: 10px 20px;
@@ -134,7 +135,23 @@ button {
     margin: 15px 5px;
     transition: transform 0.3s;
 }
-button:hover {transform: scale(1.1);}
+
+/* Surprise button hover */
+#surpriseBtn:hover {
+    transform: scale(1.1);
+}
+
+/* Play music button animation */
+#playMusicBtn {
+    animation: bounce 2s infinite alternate;
+}
+#playMusicBtn:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
 </style>
 </head>
 <body>
