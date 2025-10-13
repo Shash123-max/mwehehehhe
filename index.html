@@ -5,26 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Meshanty!</title>
 <style>
-body {margin:0;padding:0;font-family:sans-serif;text-align:center;background:linear-gradient(135deg,#f9c1c1,#fcd6c1);overflow-x:hidden;}
-h1 {font-size:2.5em;color:#d94f7c;margin-top:20px;animation:dropText 1s forwards;}
+/* Handwritten font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Dancing Script', cursive;
+    text-align:center;
+    background:linear-gradient(135deg,#f9c1c1,#fcd6c1);
+    overflow-x:hidden;
+}
+
+h1 {
+    font-size:2.5em;
+    color:#d94f7c;
+    margin-top:20px;
+    animation:dropText 1s forwards;
+}
 @keyframes dropText{0%{transform:translateY(-50px);opacity:0;}100%{transform:translateY(0);opacity:1;}}
-.images{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:30px 0;}
-.images img{width:150px;height:150px;border-radius:15px;animation:floatBounce 4s infinite ease-in-out;transition: transform 0.5s;}
-.images img:hover{transform:scale(1.2) rotate(10deg);}
+
+.images{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+.images img{
+    width:150px;
+    height:150px;
+    border-radius:15px;
+    animation:floatBounce 4s infinite ease-in-out;
+    transition: transform 0.5s;
+}
+.images img:hover{
+    transform:scale(1.2) rotate(10deg);
+}
 @keyframes floatBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-15px);}}
-.envelope{width:180px;height:110px;background:#d94f7c;border-radius:10px;margin:20px auto;position:relative;}
-.envelope::before{content:"";position:absolute;width:0;height:0;border-left:90px solid transparent;border-right:90px solid transparent;border-bottom:55px solid #d94f7c;top:-55px;}
-.envelope.open::before{animation:flapOpen 1s forwards;}
-@keyframes flapOpen{0%{transform:rotate(0deg);transform-origin:bottom center;}100%{transform:rotate(-180deg);transform-origin:bottom center;}}
-.paper{width:200px;height:230px;background:#fff;border-radius:5px;padding:15px;box-shadow:0 0 15px rgba(0,0,0,0.2);opacity:0;transition:opacity 1s;text-align:left;margin:0 auto;}
+
+.envelope{
+    width:180px;
+    height:110px;
+    background:#d94f7c;
+    border-radius:10px;
+    margin:20px auto;
+    position:relative;
+}
+.envelope::before{
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:90px solid transparent;
+    border-right:90px solid transparent;
+    border-bottom:55px solid #d94f7c;
+    top:-55px;
+}
+.envelope.open::before{
+    animation:flapOpen 1s forwards;
+}
+@keyframes flapOpen{
+    0%{transform:rotate(0deg);transform-origin:bottom center;}
+    100%{transform:rotate(-180deg);transform-origin:bottom center;}
+}
+
+.paper{
+    width:200px;
+    height:230px;
+    background:#fff;
+    border-radius:5px;
+    padding:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    opacity:0;
+    transition:opacity 1s;
+    text-align:left;
+    margin:0 auto;
+}
 .paper.show{opacity:1;}
+
 .message-content{white-space:pre-line;}
-button{padding:10px 20px;border:none;border-radius:10px;background:#ff75a0;color:#fff;margin:10px;cursor:pointer;transition:transform 0.3s;}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#ff75a0;
+    color:#fff;
+    margin:10px;
+    cursor:pointer;
+    transition:transform 0.3s;
+}
 button:hover{transform:scale(1.1);}
 #playMusicBtn{animation:bounce 2s infinite alternate;}
 #playMusicBtn:hover{transform:scale(1.2) rotate(-5deg);}
 @keyframes bounce{0%{transform:translateY(0);}100%{transform:translateY(-8px);}}
-/* Confetti particles */
+
 .confetti {
   position: fixed;
   width: 10px;
@@ -103,3 +179,4 @@ document.getElementById('playMusicBtn').addEventListener('click',()=>{
 
 </body>
 </html>
+
