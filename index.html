@@ -260,7 +260,8 @@ document.getElementById('playMusicBtn').addEventListener('click', () => {
     if (musicPlayed) return;
     const iframe = document.createElement('iframe');
     iframe.width = '0'; iframe.height = '0';
-    iframe.src = 'https://youtu.be/LvreRLglIBg?si=e0Fq6Y37-I1Ato0F';
+  iframe.src = 'https://www.youtube.com/embed/LvreRLglIBg?autoplay=1&controls=0&loop=1&playlist=LvreRLglIBg&start=0';
+
     iframe.allow = 'autoplay; encrypted-media';
     document.body.appendChild(iframe);
     musicPlayed = true;
