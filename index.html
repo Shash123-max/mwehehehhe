@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Meshanty!</title>
+<title>Happy Birthday Stark!</title>
 <style>
 /* Handwritten font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -123,9 +123,9 @@ button:hover{transform:scale(1.1);}
 
 <h1>Happy Birthday Meshanty!</h1>
 <div class="images">
-<img src="bd 1.jpg">
-<img src="bd 2.jpg">
-<img src="bd 3.jpg">
+<img src="cd 1.jpg">
+<img src="cd 2.jpg">
+<img src="cd 3.jpg">
 </div>
 
 <div class="envelope"></div>
@@ -140,7 +140,7 @@ function createHeart(){const h=document.createElement('div');h.className='heart'
 setInterval(createHeart,150);
 
 // Typing effect
-const fullMessage=`Buang ka, my sweet Pinoy Twinkie! 💖
+const fullMessage=`Buang ka, Pinoy Twinkie! 💖
 I just wanted to say… you are incredible and I hope every day of your life is filled with laughter, love, and amazing adventures!
 Keep shining and never stop being you. 🌟`;
 function typeMessage(){const c=document.getElementById('message');let i=0;c.innerHTML='';const interval=setInterval(()=>{c.innerHTML+=fullMessage[i]==='\n'?'<br>':fullMessage[i];i++;if(i>=fullMessage.length)clearInterval(interval);},50);}
@@ -149,7 +149,7 @@ function typeMessage(){const c=document.getElementById('message');let i=0;c.inne
 window.onload=function(){document.querySelector('.envelope').classList.add('open');setTimeout(()=>{document.getElementById('letter').classList.add('show');typeMessage();},1200);}
 
 // Surprise button
-document.getElementById('surpriseBtn').addEventListener('click',()=>{for(let i=0;i<20;i++)createHeart();alert('Love ya Meshanty 💖');});
+document.getElementById('surpriseBtn').addEventListener('click',()=>{for(let i=0;i<20;i++)createHeart();alert('UR GAY 💖');});
 
 // Confetti function
 function createConfetti(){
